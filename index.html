@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radio Stream Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2 id="station-name">Station Name</h2>
+  <audio id="audio-player" controls controlsList="nodownload notimeline" autoplay>
+    <source id="audio-source" src="https://centova.aarenworld.com/proxy/894tamilfm/stream" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <br>
+  <button id="prev-button">Prev</button>
+  <button id="play-button">Pause</button>
+  <button id="next-button">Next</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
