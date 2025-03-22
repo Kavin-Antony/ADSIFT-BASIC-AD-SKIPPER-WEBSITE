@@ -28,11 +28,11 @@ function toggleMute() {
   // If audio is currently unmuted (playing), mute it and change the label to "Play"
   if (!audioPlayer.muted) {
     audioPlayer.muted = true;
-    playButton.innerText = "Play";
+    playButton.innerText = "Unmute";
   } else {
     // If audio is muted, unmute it and change the label to "Pause"
     audioPlayer.muted = false;
-    playButton.innerText = "Pause";
+    playButton.innerText = "Mute";
   }
 }
 
@@ -49,7 +49,7 @@ function previousSong() {
 function loadStream() {
   // When switching streams, ensure audio is unmuted and the button reflects that state.
   audioPlayer.muted = false;
-  playButton.innerText = "Pause";
+  playButton.innerText = "Mute";
 
   audioSource.src = streams[currentStreamIndex].url;
   stationNameElement.innerText = streams[currentStreamIndex].name;
